@@ -1,5 +1,26 @@
 import React, { Component } from 'react';
 export default  class Resume extends Component {
+
+  generateSkillLevel = (skillLevel) => {
+    let fullCircle = skillLevel - skillLevel % 1;
+    let halfCircle = skillLevel % 1 == 0 ? 0 : 1;
+
+    var array = []
+    for(var i=0; i < fullCircle; i++){
+      array.push("full")
+    }
+
+    if(halfCircle) array.push("half")
+    return <div className="skillLevel">
+      <li/>
+      {array.map((item, index) => {
+        console.log(item)
+        if(item == "full") return <div className="full" key={index}/>
+        else return <div className="half" key={index}/>
+      })}
+    </div>
+  }
+
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -42,10 +63,10 @@ export default  class Resume extends Component {
                   return(
                     <div className="row item">
                        <div className="twelve columns">
-                          <h3>{item.CompanyName}</h3>
+                          <h3>{item.specialization}</h3>
                           <p className="info">
-                          {item.specialization}
-                          <span>&bull;</span> <em className="date">{item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
+                          {item.CompanyName}
+                          <span>&bull;</span> <em className="date">{item.MonthOfStart} {item.YearOfStart} - {item.MonthOfLeaving} {item.YearOfLeaving}</em></p>
                           <p>
                           {item.Achievements}
                           </p>
@@ -68,19 +89,16 @@ export default  class Resume extends Component {
 
             <div className="nine columns main-col">
 
-               <p>
-               {resumeData.skillsDescription}
-               </p>
 
    				<div className="bars">
 
    				   <ul className="skills">
                 {
-                  resumeData.skills && resumeData.skills.map((item) => {
+                  resumeData.skills && resumeData.skills.map((item, index) => {
                     return(
-                      <li>
-                      <span className={`bar-expand ${item.skillname.toLowerCase()}`}>
-                      </span><em>{item.skillname}</em>
+                      <li key={index}>
+                        <em>{item.skillname}</em>
+                        {this.generateSkillLevel(item.skilllevel)}
                       </li>
                     )
                   })

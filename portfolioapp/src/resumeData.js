@@ -1,7 +1,7 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/pbassi02",
     "name": "Pankaj Bassi",
-    "role": "Frontend Developer and Data Scientist",
+    "role": "Junior Developer",
     "linkedinId":"pbassi02",
     "skypeid": "Your skypeid",
     "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
@@ -17,52 +17,80 @@ let resumeData = {
           "className":"fa fa-github"
         }
       ],
-    "aboutme":"I am currently a pre-final year student at The LNM Institute of Information Technology and pursuing my B.Tech from here. I am a self taught Full Stack Web Developer, currently diving deeper into Machine Learning. I believe that to be successful in life, one needs to be obsessive with their dreams and keep working towards them.",
+    "aboutme":"I am currently a Junior developer with extensive experience developing user-friendly interfaces, testing, debugging for web and mobile applications. Have been involved in generating automated test scripts using Selenium and Detox. Keen interest in expanding back-end development skills and implementing automation in various business processes to increase productivity, reduce costs and help them analyze collected data.",
     "address":"Vancouver BC, Canada",
     "website":"https://github.com/pbassi02",
     "education":[
       {
-        "UniversityName":"The LNM Insitute of Information Technology",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Aug",
+        "UniversityName":"Langara College, Vancouver",
+        "specialization":"Associate Degree in Computer Science",
+        "MonthOfPassing":"",
         "YearOfPassing":"2020",
-        "Achievements":"Some Achievements"
+        "Achievements":"Completed with GPA above 3.0"
       },
       {
-        "UniversityName":"Some University",
-        "specialization":"Some specialization",
-        "MonthOfPassing":"Jan",
-        "YearOfPassing":"2018",
-        "Achievements":"Some Achievements"
+        "UniversityName":"Dayanand Model Senior Secondary School, India",
+        "specialization":"Non Medical",
+        "MonthOfPassing":"April",
+        "YearOfPassing":"2016",
+        "Achievements":""
       }
     ],
     "work":[
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
+        "CompanyName":"BuiltSpace Technologies Corp.",
+        "specialization":"Junior Developer",
+        "MonthOfStart": "Aug",
+        "YearOfStart": "2020",
+        "MonthOfLeaving":"Present",
+        "YearOfLeaving":"",
+        "Achievements":""
       },
       {
-        "CompanyName":"Some Company",
-        "specialization":"Some specialization",
-        "MonthOfLeaving":"Jan",
-        "YearOfLeaving":"2018",
-        "Achievements":"Some Achievements"
+        "CompanyName":"BuiltSpace Technologies Corp.",
+        "specialization":"Professional Services Team Member",
+        "MonthOfStart": "Jan",
+        "YearOfStart": "2020",
+        "MonthOfLeaving":"Aug",
+        "YearOfLeaving":"2020",
+        "Achievements":""
+      },
+      {
+        "CompanyName":"Black & McDonald",
+        "specialization":"Lead Mover",
+        "MonthOfStart": "June",
+        "YearOfStart": "2019",
+        "MonthOfLeaving":"Dec",
+        "YearOfLeaving":"2019",
+        "Achievements":""
       }
     ],
     "skillsDescription":"Your skills here",
     "skills":[
       {
-        "skillname":"HTML5"
+        "skillname":"React/React Native",
+        "skilllevel": 5
       },
       {
-        "skillname":"CSS"
+        "skillname":"JavaSript",
+        "skilllevel": 4.5
       },
       {
-        "skillname":"Reactjs"
-      }
+        "skillname":"HTML5",
+        "skilllevel": 4
+      },
+      {
+        "skillname":"CSS3",
+        "skilllevel": 4
+      },
+      {
+        "skillname":"Java",
+        "skilllevel": 3.5
+      },
+      {
+        "skillname":"C++",
+        "skilllevel": 3
+      },
     ],
     "portfolio":[
       {
