@@ -1,5 +1,19 @@
 import React, { Component } from 'react';
 export default class ContactUs extends Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      name: "",
+      email: "",
+      message: ""
+    }
+  }
+
+  validateFormValues = () => {
+    console.log('Form Values will be validated here')
+  }
+
   render() {
     let resumeData = this.props.resumeData;
     return (
@@ -7,8 +21,32 @@ export default class ContactUs extends Component {
           <div className="row section-head">
             <div className="ten columns">
               <p className="lead">
-              Feel free to contact me for any work or suggestions below
+              Contact me
               </p>
+              <form>
+                <label for="fname">Name
+                  <input type="text" id="fname" name="fname" placeholder="Enter name"
+                    value={this.state.name}
+                    onChange={(event) => this.setState({name: event.target.value})}
+                    maxLength={65}
+                  />
+                </label>
+                <label for="fname">Email
+                  <input type="text" id="femail" name="femail"  placeholder="Enter email"
+                    value={this.state.value}
+                    onChange={(event) => this.setState({email: event.target.value})}
+                    maxLength={65}
+                  />
+                </label>
+                <label for="fname">Message
+                  <textarea id="fmessage" name="fmessage" rows="3" cols="100"  placeholder="Enter message"
+                    value={this.state.message}  
+                    onChange={(event) => this.setState({message: event.target.value})}
+                    maxLength={255}
+                  />
+                </label>
+                <input type="button" value="Submit" onClick={() => this.validateFormValues()}/>
+              </form>
             </div>
           </div>
           <div className="row">

@@ -21,7 +21,8 @@ export default class Header extends Component {
          </nav>
 
          <div className="row banner">
-         <Particles style={{position: 'absolute', left: 0, top: 0}}/>
+           {/** Particles Code not responsive yet */}
+         {/*<Particles style={{position: 'absolute', left: 0, top: 0}}/>*/}
             <div className="banner-text">
             
                <h1 className="responsive-headline">I am {resumeData.name}.</h1>
