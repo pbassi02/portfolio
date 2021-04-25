@@ -10,8 +10,17 @@ export default class ContactUs extends Component {
     }
   }
 
+  validEmail = () => {
+    let reg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    const item = this.state.email ? this.state.email.toLowerCase() : "";
+  
+    if (!reg.test(item)) return false
+    else return true
+  }
+
   validateFormValues = () => {
-    console.log('Form Values will be validated here')
+    if(this.validEmail()) console.log("Submit data");
+    else alert("Please enter valid email!")
   }
 
   render() {

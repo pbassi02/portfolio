@@ -4,7 +4,7 @@ let resumeData = {
     "role": "Junior Developer",
     "linkedinId":"pbassi02",
     "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "roleDescription": "I am a curious person who likes to learn new things every day. I have a keen interest in automation and front-end development. I also enjoy physical activities like kayaking and bicycling that brings me close to nature.",
     "socialLinks":[
         {
           "name":"linkedin",
