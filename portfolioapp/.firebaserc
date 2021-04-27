@@ -1,6 +1,5 @@
 {
   "projects": {
-    "staging": "pbassi-portfolio",
     "default": "pbassi-portfolio"
   }
 }
