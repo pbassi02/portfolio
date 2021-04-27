@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import emailjs from 'emailjs-com';
+
 export default class ContactUs extends Component {
 
   constructor(props){
@@ -18,8 +20,36 @@ export default class ContactUs extends Component {
     else return true
   }
 
+  sendEmail = () => {
+    let emailObject = {
+      from_name: this.state.name,
+      from_email: this.state.email,
+      message: this.state.message
+    }
+
+    console.log("Sending Email")
+
+    emailjs.send('service_gmailone', 'template_rs5t06n', emailObject, "user_QQogHTCscSXvxKK2AAaNH")
+    .then(function(response) {
+       console.log('SUCCESS!', response.status, response.text);
+    }, function(error) {
+       console.log('FAILED...', error);
+    });
+
+    this.resetForm()
+  }
+
+  resetForm = () => {
+    this.setState({
+      name: "",
+      email: "",
+      message: ""
+    })
+  }
+
+
   validateFormValues = () => {
-    if(this.validEmail()) console.log("Submit data");
+    if(this.validEmail()) this.sendEmail(); //saveContactInfo(name, email, message)
     else alert("Please enter valid email!")
   }
 
@@ -42,7 +72,7 @@ export default class ContactUs extends Component {
                 </label>
                 <label for="fname">Email
                   <input type="text" id="femail" name="femail"  placeholder="Enter email"
-                    value={this.state.value}
+                    value={this.state.email}
                     onChange={(event) => this.setState({email: event.target.value})}
                     maxLength={65}
                   />
