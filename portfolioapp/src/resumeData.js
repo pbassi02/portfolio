@@ -39,20 +39,20 @@ let resumeData = {
     "work":[
       {
         "CompanyName":"BuiltSpace Technologies Corp.",
-        "specialization":"Junior Developer",
-        "MonthOfStart": "Aug",
-        "YearOfStart": "2020",
+        "specialization":"Full Stack Developer",
+        "MonthOfStart": "May",
+        "YearOfStart": "2021",
         "MonthOfLeaving":"Present",
         "YearOfLeaving":"",
         "Achievements":""
       },
       {
         "CompanyName":"BuiltSpace Technologies Corp.",
-        "specialization":"Professional Services Team Member",
+        "specialization":"Junior Developer",
         "MonthOfStart": "Jan",
         "YearOfStart": "2020",
-        "MonthOfLeaving":"Aug",
-        "YearOfLeaving":"2020",
+        "MonthOfLeaving":"May",
+        "YearOfLeaving":"2021",
         "Achievements":""
       },
       {
