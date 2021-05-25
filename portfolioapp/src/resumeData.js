@@ -1,7 +1,7 @@
 let resumeData = {
     "imagebaseurl":"https://github.com/pbassi02",
     "name": "Pankaj Bassi",
-    "role": "Junior Developer",
+    "role": "Full Stack Developer",
     "linkedinId":"pbassi02",
     "skypeid": "Your skypeid",
     "roleDescription": "I am a curious person who likes to learn new things every day. I have a keen interest in automation and front-end development. I also enjoy physical activities like kayaking and bicycling that brings me close to nature.",
@@ -17,7 +17,7 @@ let resumeData = {
           "className":"fa fa-github"
         }
       ],
-    "aboutme":"I am currently a Junior developer with extensive experience developing user-friendly interfaces, testing, debugging for web and mobile applications. Have been involved in generating automated test scripts using Selenium and Detox. Keen interest in expanding back-end development skills and implementing automation in various business processes to increase productivity, reduce costs and help them analyze collected data.",
+    "aboutme":"I am currently a Full Stack developer with extensive experience developing user-friendly interfaces, testing, debugging for web and mobile applications. Have been involved in generating automated test scripts using Selenium and Detox. Keen interest in expanding back-end development skills and implementing automation in various business processes to increase productivity, reduce costs and help them analyze collected data.",
     "address":"Vancouver BC, Canada",
     "website":"https://github.com/pbassi02",
     "education":[
