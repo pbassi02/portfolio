@@ -17,7 +17,7 @@ let resumeData = {
           "className":"fa fa-github"
         }
       ],
-    "aboutme":"I am currently a Full Stack developer with extensive experience developing user-friendly interfaces, testing, debugging for web and mobile applications. Have been involved in generating automated test scripts using Selenium and Detox. Keen interest in expanding back-end development skills and implementing automation in various business processes to increase productivity, reduce costs and help them analyze collected data.",
+    "aboutme":"I am currently a Mobile developer with extensive experience developing user-friendly interfaces, testing, debugging for web and mobile applications. Have been involved in generating automated test scripts using Selenium and Detox. Keen interest in expanding back-end development skills and implementing automation in various business processes to increase productivity, reduce costs and help them analyze collected data.",
     "address":"Vancouver BC, Canada",
     "website":"https://github.com/pbassi02",
     "education":[
@@ -38,12 +38,21 @@ let resumeData = {
     ],
     "work":[
       {
+        "CompanyName":"Milk Moovement Inc.",
+        "specialization":"Mobile Developer",
+        "MonthOfStart": "Aug",
+        "YearOfStart": "2021",
+        "MonthOfLeaving":"Present",
+        "YearOfLeaving":"",
+        "Achievements":""
+      },
+      {
         "CompanyName":"BuiltSpace Technologies Corp.",
         "specialization":"Full Stack Developer",
         "MonthOfStart": "May",
         "YearOfStart": "2021",
-        "MonthOfLeaving":"Present",
-        "YearOfLeaving":"",
+        "MonthOfLeaving":"Sep",
+        "YearOfLeaving":"2021",
         "Achievements":""
       },
       {
